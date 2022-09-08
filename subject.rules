@@ -1,0 +1,59 @@
+#naver.com SNI 
+alert tls any any -> any 443 (msg:"naver.com access"; flow:to_server,established; tls_sni; content:"naver.com"; sid:100002; rev:1;)
+
+#nate.com SNI
+alert tls any any -> any 443 (msg:"nate.com access"; flow:to_server,established; tls_sni; content:"www.nate.com"; sid:100003; rev:1;)
+alert tls any any -> any 443 (msg:"nate.com access"; flow:to_server,established; tls_sni; content:"search.daum.net"; sid:100004; rev:1;)
+
+#daum.net SNI
+alert tls any any -> any 443 (msg:"daum.net access"; flow:to_server,established; tls_sni; content:"daum.net"; sid:100005; rev:1;)
+
+#bbq.co.kr SNI
+alert tls any any -> any 443 (msg:"bbq.co.kr access"; flow:to_server,established; tls_sni; content:"bbq.co.kr"; sid:100006; rev:1;)
+alert tls any any -> any 443 (msg:"bbq.co.kr access"; flow:to_server,established; tls_sni; content:"cdn.megadata.co.kr"; sid:100007; rev:1;)
+
+#kyochon.com SNI
+alert tls any any -> any 443 (msg:"kyochon.com access"; flow:to_server,established; tls_sni; content:"kyochon.com"; sid:100008; rev:1;)
+
+#bhc.coo.kr SNI
+alert tls any any -> any 443 (msg:"bhc.co.kr access"; flow:to_server,established; tls_sni; content:"bhc.co.kr"; sid:100009; rev:1;)
+
+#mcdonalds.co.kr SNI
+alert tls any any -> any 443 (msg:"mcdonalds.co.kr access"; flow:to_server,established; tls_sni; content:"mcdonalds.co.kr"; sid:100010; rev:1;)
+
+#lotteria.com SNI
+alert tls any any -> any 443 (msg:"lotteria.com access"; flow:to_server,established; tls_sni; content:"lotteria.com"; sid:100011; rev:1;)
+
+#momstouch.co.kr SNI
+alert tls any any -> any 443 (msg:"momstouch.co.kr access"; flow:to_server,established; tls_sni; content:"momstouch.co.kr"; sid:100012; rev:1;)
+alert tls any any -> any 443 (msg:"momstouch.co.kr access"; flow:to_server,established; tls_sni; content:"momstouchdev.co.kr"; sid:100013; rev:1;)
+
+#burgerking.co.kr SNI
+alert tls any any -> any 443 (msg:"burgerking.co.kr access"; flow:to_server,established; tls_sni; content:"burgerking.co.kr"; sid:100014; rev:1;)
+
+#nexon.com SNI
+alert tls any any -> any 443 (msg:"nexon.com access"; flow:to_server,established; tls_sni; content:"nexon.com"; sid:100015; rev:1;)
+
+#netmarble.net SNI
+alert tls any any -> any 443 (msg:"netmarble.net access"; flow:to_server,established; tls_sni; content:"netmarble.net"; sid:100016; rev:1;)
+
+#yahoo.com SNI
+alert tls any any -> any 443 (msg:"yahoo.com access"; flow:to_server,established; tls_sni; content:"yahoo.com"; sid:100017; rev:1;)
+
+#mgame.com SNI
+alert tls any any -> any 443 (msg:"mgame.com access"; flow:to_server,established; tls_sni; content:"mgame.com"; sid:100018; rev:1;)
+
+#leaguoflegneds SNI
+alert tls any any -> any 443 (msg:"leagueoflegends access"; flow:to_server,established; tls_sni; content:"leagueoflegends.com"; sid:100019; rev:1;)
+
+#blizzard.com SNI
+alert tls any any -> any 443 (msg:"blizzard.com access"; flow:to_server,established; tls_sni; content:"blizzard.com"; sid:100020; rev:1;)
+
+#yukhunfnc.kr SNI
+alert tcp any any -> any 80 (msg:"yukjunfnc.kr access"; content:"GET /"; content:"Host: "; content:"yukjunfnc.kr"; sid:100021; rev:1;)
+
+#dominos.co.kr SNI
+alert tls any any -> any 443 (msg:"dominos.co.kr access"; flow:to_server,established; tls_sni; content:"dominos.co.kr"; sid:100022; rev:1;)
+
+#pizzahut.co.kr SNI
+alert tls any any -> any 443 (msg:"pizzahut.co.kr access"; flow:to_server,established; tls_sni; content:"pizzahut.co.kr"; sid:100023; rev:1;)
